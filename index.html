@@ -30,6 +30,8 @@ p {
 <body>
   
 <p id="demo"></p>
+<p id="img"></p>
+<img  id="Sofa" src="Sofa.png" alt="Sofa">
 <script>
 
 var countDownDate = new Date("Sep 29, 2021 00:00:00").getTime();
@@ -52,11 +54,12 @@ var x = setInterval(function() {
     
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Patientez.";
+    document.getElementById("demo").innerHTML = "3GarsSofa.";
+    document.getElementById("Sofa").remove;
+    document.getElementById("img").innerHTML = '<img src="1.gif" width="200" height="100">';
   }
 }, 1000);
 </script>
 
-<img src="assets/img/Sofa.png" alt="Sofa" class="sofa">
 </body>
 </html>
